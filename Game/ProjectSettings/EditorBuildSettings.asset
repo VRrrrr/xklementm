@@ -20,4 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ReturnMenu.unity
     guid: b6d63c3212ff7bc4593d5dbc4fadfee8
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b0268c013001e0f4aa492553e45b3241,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 639454861abcfb74c92edfa8aca1a4ec,
+      type: 2}

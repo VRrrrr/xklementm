@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.game.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "F:\\Unity Final version\\Game\\actions.json",
+      "action_manifest_path": "C:\\Users\\vr\\Documents\\games\\xklement_z_gitu\\xklementm\\Game\\actions.json",
       "strings": {
         "en_us": {
           "name": "Game [Testing]"

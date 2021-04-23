@@ -20,12 +20,12 @@ public class Describing : MonoBehaviour
 
     public void HoverButtonPressed()
     {
-        describeText.text += " Stlačené";
+        describeText.text = "Výborne! Podarilo sa ti stlačiť tlačidlo";
     }
 
     public void HoverButtonReleased()
     {
-        describeText.text += " Pustené";
+        describeText.text = "Posuň tlačidlo dolu tým, že ho ovládačom potlačíš dole";
     }
 
 }
