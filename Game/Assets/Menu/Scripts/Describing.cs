@@ -7,15 +7,15 @@ public class Describing : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text describeText;
+    private int clickCounter = 0;
 
     void Start()
     {
-        
     }
 
     public void ButtonPressed()
     {
-        describeText.text = "Výborne! Podarilo sa ti stlačiť tlačidlo";
+        describeText.text = "Výborne! Podarilo sa ti stlačiť tlačidlo " + ++clickCounter + "-krát";
     }
 
     public void HoverButtonPressed()
