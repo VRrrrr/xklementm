@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4334,7 +4334,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279427562}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &283782661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5860,7 +5860,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374625282}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &374664842
 GameObject:
   m_ObjectHideFlags: 0
@@ -9208,7 +9208,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &586814914
 Canvas:
   m_ObjectHideFlags: 0
@@ -9285,6 +9285,31 @@ MonoBehaviour:
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -9378,6 +9403,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+  hoverPriority: 0
 --- !u!65 &587330167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11073,7 +11099,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652787140}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!135 &654129965
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11660,7 +11686,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700521110}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1001 &726526383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11816,7 +11842,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729915505}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &736795657
 GameObject:
   m_ObjectHideFlags: 0
@@ -13268,7 +13294,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842965576}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &849479826
 GameObject:
   m_ObjectHideFlags: 0
@@ -14184,7 +14210,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &925222460
 Canvas:
   m_ObjectHideFlags: 0
@@ -14917,6 +14943,31 @@ MonoBehaviour:
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -15010,6 +15061,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+  hoverPriority: 0
 --- !u!65 &962640667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17243,7 +17295,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054615715}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &1056235898
 GameObject:
   m_ObjectHideFlags: 0
@@ -18200,7 +18252,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167141720}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &1183469673
 GameObject:
   m_ObjectHideFlags: 0
@@ -18901,7 +18953,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &1215591048
 Canvas:
   m_ObjectHideFlags: 0
@@ -20310,7 +20362,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &1264881355
 Canvas:
   m_ObjectHideFlags: 0
@@ -24090,7 +24142,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &1464810166
 Canvas:
   m_ObjectHideFlags: 0
@@ -27486,6 +27538,31 @@ MonoBehaviour:
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -27579,6 +27656,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+  hoverPriority: 0
 --- !u!65 &1673359508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29133,7 +29211,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 5
 --- !u!223 &1776722373
 Canvas:
   m_ObjectHideFlags: 0
@@ -31520,6 +31598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleporting
       objectReference: {fileID: 0}
+    - target: {fileID: 153878, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_LocalPosition.x
       value: -89.37
@@ -32083,6 +32165,31 @@ MonoBehaviour:
   releaseVelocityStyle: 1
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
+  scaleReleaseVelocityThreshold: -1
+  scaleReleaseVelocityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
@@ -32176,6 +32283,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+  hoverPriority: 0
 --- !u!65 &2036459993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33228,7 +33336,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132638056}
-  m_Mesh: {fileID: 4300010, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: 5998731732580208003, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!1 &2141936388
 GameObject:
   m_ObjectHideFlags: 0
@@ -33340,7 +33448,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617937735595478984}
-  m_Mesh: {fileID: 4300008, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
+  m_Mesh: {fileID: -4624424834575085134, guid: cf954d3e16be2e04aa05b9a60cff9422, type: 3}
 --- !u!23 &617937735593283840
 MeshRenderer:
   m_ObjectHideFlags: 0
