@@ -117,7 +117,7 @@ public class EngineTune : MonoBehaviour
 
         
         if (!accumObj.accumulatorsPassed)
-            engineStartFail("Štart zlyhal, najprv pripoj akumulátory k vlaku !");
+            engineStartFail("Štart zlyhal, najprv pripoj akumulátory k vlaku!");
 
         
 
@@ -130,7 +130,7 @@ public class EngineTune : MonoBehaviour
             //otacky na 95 - 105 % maxima
             if (RoundsScript.getRounds() < (0.95 * 1000) || RoundsScript.getRounds() > (1.05 * 1000))
             {
-                engineStartFail("Štart zlyhal, otáčky musia byť medzi 95% a 105 % maxima !");
+                engineStartFail("Štart zlyhal, otáčky musia byť medzi 95% a 105 % maxima!");
             }
         }
 
@@ -139,7 +139,7 @@ public class EngineTune : MonoBehaviour
         {           
             engineOn = true;
             powerButtonScript.switchPower(on);
-            debugText.text = "Gratulujem ti, podarilo sa ti naštartovať motor, pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie..";
+            debugText.text = "Gratulujem ti, podarilo sa ti naštartovať motor, pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie.";
             CalculationButton.interactable = true;
         }
 
@@ -156,7 +156,7 @@ public class EngineTune : MonoBehaviour
     private void turnoffEngine()
     {
         engineOn = false;
-        debugText.text = "Vypol si motor vlaku, pre pokračovanie v úrovni ho musíš znova zapnúť !";
+        debugText.text = "Vypol si motor vlaku, pre pokračovanie v úrovni ho musíš znova zapnúť.";
     }
 
     void destroyEngine()
@@ -194,7 +194,7 @@ public class EngineTune : MonoBehaviour
     }
 
     void levelFailed(string failMessage) {
-        debugText.text = "Bohužial sa ti nepodarilo túto úroveň prejsť : " + failMessage;
+        debugText.text = "Bohužial sa ti nepodarilo túto úroveň prejsť: " + failMessage;
     }
 
     public void switchEnergy() {
