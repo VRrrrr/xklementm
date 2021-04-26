@@ -103,13 +103,13 @@
      <Compile Include="Assets\Menu\Scripts\ButtonDown.cs" />
      <Compile Include="Assets\Menu\Scripts\MoreBalls.cs" />
      <Compile Include="Assets\Menu\Scripts\CubeSpawner1.cs" />
+     <Compile Include="Assets\Menu\Scripts\LockToPoint.cs" />
      <Compile Include="Assets\Level1\Scripts\EngineManager.cs" />
      <Compile Include="Assets\Level2\Scripts\Coil.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Level3\Scripts\AttachCanvasesToPlayer2.cs" />
      <Compile Include="Assets\Level2\Scripts\SchematicOnPut.cs" />
      <Compile Include="Assets\Level2\Scripts\MiniLevel3_Particle.cs" />
-     <Compile Include="Assets\Menu\Scripts\LockToPoint.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
