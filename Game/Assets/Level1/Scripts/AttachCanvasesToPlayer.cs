@@ -22,9 +22,9 @@ public class AttachCanvasesToPlayer : MonoBehaviour
             canvases[i].worldCamera = prPointer;
         }
 
-        player.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
-        player.transform.position = new Vector3(1.4f,0,3.5f);
-        
+        player.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        player.transform.position = new Vector3(1.4f,-1f,3.5f);
+        player.transform.Rotate(0, -90, 0);
     }
 
     // Update is called once per frame

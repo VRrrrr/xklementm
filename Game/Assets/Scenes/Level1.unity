@@ -4904,7 +4904,7 @@ RectTransform:
   m_GameObject: {fileID: 328356024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.74}
-  m_LocalScale: {x: -0.002570484, y: 0.0034273083, z: 0.0025704843}
+  m_LocalScale: {x: -0.002570484, y: 0.002570484, z: 0.0025704843}
   m_Children:
   - {fileID: 382176244}
   m_Father: {fileID: 108191708}
@@ -4971,7 +4971,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -5976,7 +5976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6e8b24558e6899742b276a1b6c480de1, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.54187435, g: 0.8512931, b: 0.9339623, a: 0.5}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5986,11 +5986,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 150
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -9464,7 +9464,7 @@ GameObject:
   - component: {fileID: 587700668}
   - component: {fileID: 587700667}
   - component: {fileID: 587700666}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: canvas (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9480,7 +9480,7 @@ RectTransform:
   m_GameObject: {fileID: 587700664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.7400017}
-  m_LocalScale: {x: -0.002570484, y: 0.0034273083, z: 0.0025704843}
+  m_LocalScale: {x: -0.002570484, y: 0.002570484, z: 0.0025704843}
   m_Children:
   - {fileID: 1757993946}
   m_Father: {fileID: 911255423}
@@ -15143,7 +15143,7 @@ GameObject:
   - component: {fileID: 964222797}
   - component: {fileID: 964222796}
   - component: {fileID: 964222795}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15162,7 +15162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6e8b24558e6899742b276a1b6c480de1, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.54187435, g: 0.8512931, b: 0.9339623, a: 0.5}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15172,11 +15172,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 150
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -20060,7 +20060,7 @@ RectTransform:
   m_GameObject: {fileID: 1257027328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.7400017}
-  m_LocalScale: {x: -0.002570484, y: 0.0034273083, z: 0.0025704843}
+  m_LocalScale: {x: -0.002570484, y: 0.002570484, z: 0.0025704843}
   m_Children:
   - {fileID: 1567645333}
   m_Father: {fileID: 1731865366}
@@ -20127,7 +20127,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -22537,7 +22537,7 @@ GameObject:
   - component: {fileID: 1415969048}
   - component: {fileID: 1415969047}
   - component: {fileID: 1415969046}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: canvas (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22553,7 +22553,7 @@ RectTransform:
   m_GameObject: {fileID: 1415969044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.7400017}
-  m_LocalScale: {x: -0.002570484, y: 0.0034273083, z: 0.0025704843}
+  m_LocalScale: {x: -0.002570484, y: 0.002570484, z: 0.0025704843}
   m_Children:
   - {fileID: 964222797}
   m_Father: {fileID: 1260635496}
@@ -26523,7 +26523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6e8b24558e6899742b276a1b6c480de1, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.54187435, g: 0.8512931, b: 0.9339623, a: 0.5}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -26533,11 +26533,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 150
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -29066,7 +29066,7 @@ GameObject:
   - component: {fileID: 1757993946}
   - component: {fileID: 1757993945}
   - component: {fileID: 1757993944}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29085,7 +29085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6e8b24558e6899742b276a1b6c480de1, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.54187435, g: 0.8512931, b: 0.9339623, a: 0.5}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29095,11 +29095,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 150
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
