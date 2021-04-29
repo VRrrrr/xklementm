@@ -25,7 +25,7 @@ public class EngineManager : MonoBehaviour
     // Text update pre frekvenciu
     public void textUpdate(float freq)
     {
-        outputText.text = freq + " Hz";
+        outputText.text = Mathf.Ceil(freq) + " Hz";
     }
     // Text update pre nätie
     public void voltageUpdate(float value)

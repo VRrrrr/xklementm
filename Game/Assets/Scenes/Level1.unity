@@ -7286,7 +7286,6 @@ GameObject:
   - component: {fileID: 477156189}
   - component: {fileID: 477156188}
   - component: {fileID: 477156187}
-  - component: {fileID: 477156190}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -7352,29 +7351,6 @@ Transform:
   m_Father: {fileID: 2000608506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &477156190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477156186}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202a6e24b48d1684398409c47161adcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingOriginTransform: {fileID: 0}
-  hmdTransforms: []
-  hands: []
-  headCollider: {fileID: 0}
-  rigSteamVR: {fileID: 0}
-  rig2DFallback: {fileID: 0}
-  audioListener: {fileID: 0}
-  headsetOnHead:
-    actionPath: /actions/default/in/HeadsetOnHead
-    needsReinit: 0
-  allowToggleTo2D: 1
 --- !u!1 &480119899
 GameObject:
   m_ObjectHideFlags: 0
