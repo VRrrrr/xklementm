@@ -75,6 +75,8 @@ public class Spawner : MonoBehaviour
     public void setScore(int score)
     {        
         Score = score;
+        Debug.Log("score : " + Score);
+
         scoreDisplay.text = Score.ToString();
         numberOfParticles++;
         missCombo = 0;

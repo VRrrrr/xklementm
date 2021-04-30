@@ -47,8 +47,8 @@ public class SchemaManager : MonoBehaviour
 
         outputText.text = Instruction(0);
 
-        batteryStateText.text = " Batéria : vybratá";
-        coilStateText.text = " Cievka : vybratá";
+        batteryStateText.text = " Batéria: vybratá";
+        coilStateText.text = " Cievka: vybratá";
     }
 
     // Update is called once per frame
@@ -82,13 +82,13 @@ public class SchemaManager : MonoBehaviour
     {
         if (batteryScript.batteryInserted)
         {
-            batteryStateText.text = " Batéria : vložená";
+            batteryStateText.text = " Batéria: vložená";
             voltmeterText.text = "Napätie: 9 V";            
         }
 
         else
         {
-            batteryStateText.text = " Batéria : vybratá";
+            batteryStateText.text = " Batéria: vybratá";
             voltmeterText.text = "Napätie: 0 V";
             compassScript.on = false;
         }
@@ -98,10 +98,10 @@ public class SchemaManager : MonoBehaviour
     private void CoilAdd()
     {
         if (coilScript.coilInserted)        
-            coilStateText.text = " Cievka : vložená";
+            coilStateText.text = " Cievka: vložená";
         else
         {
-            coilStateText.text = " Cievka : vybratá";
+            coilStateText.text = " Cievka: vybratá";
             compassScript.on = false;
         }
             
