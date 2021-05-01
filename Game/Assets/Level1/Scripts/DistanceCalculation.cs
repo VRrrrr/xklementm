@@ -95,7 +95,7 @@ public class DistanceCalculation : MonoBehaviour
             pressLimit--;
         }
         else 
-            outputText.text = "Limit výpočtov vyčerpaný..";
+            outputText.text = "Limit výpočtov vyčerpaný.";
 
         
 

@@ -52,7 +52,11 @@ public class Spawner : MonoBehaviour
 
                 Debug.Log("particle speed : " + (float)(20 + Score) / 10f);
                 Debug.Log("beat speed : " + ((float)Random.Range(60, 120)) / 100f);
+                Debug.Log("particle info: " + particle.tag);    //dava normnalneinfo
 
+
+
+                //mozno tu by som mohla nastavovat tag tej danej partcile
                 particle.transform.localPosition = Vector3.zero;
                 particle.transform.Rotate(transform.forward, 90 * Random.Range(0, 4));
                 timer -= beat;

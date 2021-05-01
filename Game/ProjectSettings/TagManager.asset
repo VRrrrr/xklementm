@@ -6,6 +6,10 @@ TagManager:
   tags:
   - LightSmallRoom
   - Accumul
+  - projectile
+  - FxTemporaire
+  - Negative
+  - Positive
   layers:
   - Default
   - TransparentFX
