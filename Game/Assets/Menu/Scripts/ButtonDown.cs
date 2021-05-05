@@ -10,6 +10,13 @@ public class ButtonDown : MonoBehaviour
         Destroy(GameObject.Find("Cubes"));
         Destroy(GameObject.Find("Cubes2"));
         Destroy(GameObject.Find("Sabres"));
+        Destroy(GameObject.Find("Grip"));
+        Destroy(GameObject.Find("Grip"));
+        Destroy(GameObject.Find("ViveController"));
+        Destroy(GameObject.Find("ViveController (1)"));
+
+
+        Debug.Log("Destroying stuff hehe");
 
         string Scenename = "level" + level.ToString();
         SceneManager.LoadScene(Scenename, LoadSceneMode.Single);

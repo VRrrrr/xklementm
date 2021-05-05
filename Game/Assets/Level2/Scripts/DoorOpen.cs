@@ -19,7 +19,7 @@ public class DoorOpen : MonoBehaviour
     {
         if (open && transform.position.x < 5)
         {
-            transform.position += Time.deltaTime * transform.right * 1.2f;
+            transform.position += Time.deltaTime * transform.forward * 1.2f;
         }
     }
 

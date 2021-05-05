@@ -12,8 +12,9 @@ public class NextLevel : MonoBehaviour
     }
 
     public void nextLevel()
-    {       
+    {
         //Level 2
+        Debug.Log("Vymazat");
         SceneManager.LoadScene("Level2", LoadSceneMode.Single);
     }
     public void restartLevel()
