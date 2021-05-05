@@ -50,9 +50,9 @@ public class Spawner : MonoBehaviour
                 GameObject particle = Instantiate(particles[Random.Range(0, 2)], points[Random.Range(0, 4)]);
                 particleScript = particle.GetComponent<Particle>();
 
-                Debug.Log("particle speed : " + (float)(20 + Score) / 10f);
-                Debug.Log("beat speed : " + ((float)Random.Range(60, 120)) / 100f);
-                Debug.Log("particle info: " + particle.tag);    //dava normnalneinfo
+                //Debug.Log("particle speed : " + (float)(20 + Score) / 10f);
+                //Debug.Log("beat speed : " + ((float)Random.Range(60, 120)) / 100f);
+                //Debug.Log("particle info: " + particle.tag);    //dava normnalneinfo
 
 
 
@@ -79,7 +79,7 @@ public class Spawner : MonoBehaviour
     public void setScore(int score)
     {        
         Score = score;
-        Debug.Log("score : " + Score);
+        // Debug.Log("score : " + Score);
 
         scoreDisplay.text = Score.ToString();
         numberOfParticles++;

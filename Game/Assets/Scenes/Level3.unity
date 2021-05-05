@@ -832,6 +832,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   spawner: {fileID: 179595863}
+  hapticAction:
+    actionPath: /actions/default/out/Haptic
+    needsReinit: 0
 --- !u!1 &501615775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624715222}
   - component: {fileID: 630473946}
+  - component: {fileID: 624629167}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Untagged
@@ -1591,6 +1595,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &624629167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624629166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebc27426f7946449bd3a636195d9258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticAction:
+    actionPath: 
+    needsReinit: 0
 --- !u!1 &624630374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,6 +4576,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   spawner: {fileID: 179595863}
+  hapticAction:
+    actionPath: /actions/default/out/Haptic
+    needsReinit: 0
 --- !u!1 &1764819711
 GameObject:
   m_ObjectHideFlags: 0
