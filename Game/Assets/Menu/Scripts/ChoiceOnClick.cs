@@ -16,6 +16,11 @@ public class ChoiceOnClick : MonoBehaviour
         Destroy(GameObject.Find("Cubes"));
         Destroy(GameObject.Find("Cubes2"));
         Destroy(GameObject.Find("Sabres"));
+        Destroy(GameObject.Find("Grip"));
+        Destroy(GameObject.Find("Grip"));
+        Destroy(GameObject.Find("ViveController"));
+        Destroy(GameObject.Find("ViveController (1)"));
+
         //Level 1
         SceneManager.LoadScene("Level1", LoadSceneMode.Single);
         //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Level1"));

@@ -4,6 +4,8 @@
 //
 //=============================================================================
 
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -224,22 +226,24 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		public void TeleportToScene()
 		{
-			if ( !string.IsNullOrEmpty(switchToScene) )
-			{
-				//Debug.Log("<b>[SteamVR Interaction]</b> TeleportPoint: Hook up your level loading logic to switch to new scene: " + switchToScene, this);
-
-				if (string.Equals(switchToScene, "Level3")){ //znamena, ze sa sem teleportujeme z L2
-					GameObject[] allObjects = FindObjectsOfType<GameObject>();
-					foreach (GameObject item in allObjects) {
-						Destroy(item);
-					}
+			if ( !string.IsNullOrEmpty(switchToScene) ){
+				if (string.Equals(switchToScene, "Level3")){ //znamena, ze sa sem teleportujeme z L2->L3
+					UnityEngine.Debug.Log("Destroying Player Start");
+					Destroy(GameObject.Find("Player"));
+					UnityEngine.Debug.Log("Destroying Player End");
 				}
 				Debug.Log("<b>Switch to new scene: " + switchToScene, this);
-				SceneManager.LoadScene(switchToScene, LoadSceneMode.Single);
-
-			} else
-			{
+				SceneManager.LoadScene(switchToScene);
+			} else{
 				Debug.LogError("<b>[SteamVR Interaction]</b> TeleportPoint: Invalid scene name to switch to: " + switchToScene, this);
+			}
+		}
+
+		public IEnumerator WaitForSceneLoad(Scene scene) {
+			while (scene.isLoaded) {
+				UnityEngine.Debug.Log("Setting active scene...");
+				SceneManager.SetActiveScene(scene);
+				yield return null;  //toto sposobi zacyklenie dovtedy dokym podmienka bude neplatna
 			}
 		}
 
