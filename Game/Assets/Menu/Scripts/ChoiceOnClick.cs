@@ -14,18 +14,11 @@ public class ChoiceOnClick : MonoBehaviour
 
         Debug.Log("size of children DontDestroyOnLoad: " + go.scene.rootCount);
 
-        /*foreach (var root in go.scene.GetRootGameObjects()) {
-            //if(string.Equals(root.name, "Player")) { }
-            Debug.Log("Name of child in DontDestroyOnLoad: " + root.name);
-        //Destroy(root);
-
-        }*/
-
-        //go.scene.rootCount je mnoztsvo deti sceny DontDestroyOnLoad
-        //preskakujem prve dva prvky, lebo 1. je ChaperoneInfo a 2. je Player. kjtory musia zostat
-        for (int i = 2; i < go.scene.rootCount; i++) {
-            Debug.Log("Name of child in DontDestroyOnLoad: " + go.scene.GetRootGameObjects()[i].name);
-            Destroy(go.scene.GetRootGameObjects()[i]);
+        foreach (var root in go.scene.GetRootGameObjects()) {
+            if (!((string.Equals(root.name, "Player") || string.Equals(root.name, "[ChaperoneInfo]")))) {
+                Debug.Log("Name of child in DontDestroyOnLoad: " + root.name);
+                Destroy(root);
+            }
         }
     }
 
@@ -33,14 +26,6 @@ public class ChoiceOnClick : MonoBehaviour
     //Funkcia sa vola po stlaceni tlacidla start
     public void startGame()
     {
-        //GameObject matafaka = GameObject.Find("DontDestroyOnLoad");
-        //toto asi nejde
-        //Debug.Log("pocety: " + matafaka.transform.childCount);
-        /*for(int i = 0; i < matafaka.transform.childCount; i++) {
-            Debug.Log("Name of child in DonbtDestroyOnLoad: " + matafaka.transform.GetChild(i).gameObject.name);
-        }*/
-
-
         DestroyAllDontDestroyOnLoadObjects();
 
 
