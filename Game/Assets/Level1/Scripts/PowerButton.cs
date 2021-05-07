@@ -9,6 +9,7 @@ public class PowerButton : MonoBehaviour
     Text powerText;
     bool on;
     public Button switchButton;
+    public Text energyStatus;
 
     
 
@@ -28,11 +29,14 @@ public class PowerButton : MonoBehaviour
             powerText.text = "Vypnúť";
             powerText.color = Color.red;
             switchButton.image.color = Color.red;
-        }
-        else { 
+            energyStatus.text = "Zdroj energie: Zapnutý";
+
+        } else { 
             powerText.text = "Zapnúť";
             powerText.color = Color.green;
             switchButton.image.color = Color.green;
+            energyStatus.text = "Zdroj energie: Vypnutý";
+
         }
         //Debug.Log(gameObject.name);
     }
