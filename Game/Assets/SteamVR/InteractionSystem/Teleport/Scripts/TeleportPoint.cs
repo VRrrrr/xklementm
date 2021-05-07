@@ -228,9 +228,8 @@ namespace Valve.VR.InteractionSystem
 		{
 			if ( !string.IsNullOrEmpty(switchToScene) ){
 				if (string.Equals(switchToScene, "Level3")){ //znamena, ze sa sem teleportujeme z L2->L3
-					UnityEngine.Debug.Log("Destroying Player Start");
-					Destroy(GameObject.Find("Player"));
-					UnityEngine.Debug.Log("Destroying Player End");
+					//Destroy(GameObject.Find("Player"));
+					DestroyAllDontDestroyOnLoadObjects();
 				}
 				Debug.Log("<b>Switch to new scene: " + switchToScene, this);
 				SceneManager.LoadScene(switchToScene);
@@ -247,6 +246,20 @@ namespace Valve.VR.InteractionSystem
 			}
 		}
 
+
+		public void DestroyAllDontDestroyOnLoadObjects() {
+			//we need an extra object to access the DontDestroyOnLoad scene
+			var go = new GameObject("Sacrificial Lamb");
+			DontDestroyOnLoad(go);
+
+			//Debug.Log("Amount of children in DontDestroyOnLoad: " + go.scene.rootCount);
+			foreach (var root in go.scene.GetRootGameObjects()) {
+				if (!((string.Equals(root.name, "[ChaperoneInfo]")))) {
+					//Debug.Log("Name of the child in DontDestroyOnLoad: " + root.name);
+					Destroy(root);
+				}
+			}
+		}
 
 		//-------------------------------------------------
 		public void GetRelevantComponents()

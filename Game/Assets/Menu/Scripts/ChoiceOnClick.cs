@@ -5,45 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class ChoiceOnClick : MonoBehaviour
 {
+    //Funkcia sa vola po stlaceni tlacidla start
+    public void startGame()
+    {
+        DestroyAllDontDestroyOnLoadObjects();
+        //Level 1
+        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+        StartCoroutine(WaitForSceneLoad(SceneManager.GetSceneByName("Level1")));
+    }
 
-    //Player a Player3 
     public void DestroyAllDontDestroyOnLoadObjects() {
 
         var go = new GameObject("Sacrificial Lamb");
         DontDestroyOnLoad(go);
 
-        Debug.Log("size of children DontDestroyOnLoad: " + go.scene.rootCount);
-
+        //Debug.Log("Amount of children in DontDestroyOnLoad: " + go.scene.rootCount);
         foreach (var root in go.scene.GetRootGameObjects()) {
             if (!((string.Equals(root.name, "Player") || string.Equals(root.name, "[ChaperoneInfo]")))) {
-                Debug.Log("Name of child in DontDestroyOnLoad: " + root.name);
+                //Debug.Log("Name of child in DontDestroyOnLoad: " + root.name);
                 Destroy(root);
             }
         }
-    }
-
-
-    //Funkcia sa vola po stlaceni tlacidla start
-    public void startGame()
-    {
-        DestroyAllDontDestroyOnLoadObjects();
-
-
-        /*Destroy(GameObject.Find("Cubes"));
-        Destroy(GameObject.Find("Cubes2"));
-        Destroy(GameObject.Find("Sabres"));
-        Destroy(GameObject.Find("Grip"));
-        Destroy(GameObject.Find("Grip"));
-        Destroy(GameObject.Find("ViveController"));
-        Destroy(GameObject.Find("ViveController (1)"));*/
-
-     
-
-
-        //Level 1
-        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
-        StartCoroutine(WaitForSceneLoad(SceneManager.GetSceneByName("Level1")));
-
     }
 
     public IEnumerator WaitForSceneLoad(Scene scene) {
