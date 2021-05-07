@@ -38,24 +38,15 @@ public class Saber : MonoBehaviour
                     if ((Application.isEditor)){
                         Pulse(0.1f, 100, 1.0f, SteamVR_Input_Sources.RightHand);
                         //Scene menu = SceneManager.GetSceneByName("Menu");
-                        GameObject[] allObjects = FindObjectsOfType<GameObject>();
-                        UnityEngine.Debug.Log("EXIT load menu3");
+                        //UnityEngine.Debug.Log("EXIT load menu3");
 
+                        GameObject[] allObjects = FindObjectsOfType<GameObject>();
                         foreach (GameObject item in allObjects){
                             Destroy(item);
                         }
-                        UnityEngine.Debug.Log("EXIT load menu4");
-                        
-                        
-                        //todo korutinu
-                        //SceneManager.SetActiveScene(menu);
-
 
                         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-                        UnityEngine.Debug.Log("Starting coroutine...1");
                         StartCoroutine(WaitForSceneLoad(SceneManager.GetSceneByName("Menu")));
-                        UnityEngine.Debug.Log("Started coroutine...2");
-
 
                     } else{
                         Process.Start(Application.dataPath + "/../Game.exe");
@@ -83,7 +74,7 @@ public class Saber : MonoBehaviour
 
     public IEnumerator WaitForSceneLoad(Scene scene) {
         while (scene.isLoaded) {
-            UnityEngine.Debug.Log("Setting active scene...");
+            //UnityEngine.Debug.Log("Setting active scene...");
             SceneManager.SetActiveScene(scene);
             yield return null;  //toto sposobi zacyklenie dovtedy dokym podmienka bude neplatna
         }
