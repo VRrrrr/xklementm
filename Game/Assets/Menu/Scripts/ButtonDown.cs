@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonDown : MonoBehaviour
 {
-    public void LevelTransition(int level)
-    {
+    public void LevelTransition(int level) {
         DestroyAllDontDestroyOnLoadObjects();
         /*Destroy(GameObject.Find("Cubes"));
         Destroy(GameObject.Find("Cubes2"));
@@ -17,6 +16,12 @@ public class ButtonDown : MonoBehaviour
         Destroy(GameObject.Find("ViveController (1)"));*/
 
         string Scenename = "level" + level.ToString();
+        Debug.Log("Meno scenyyyy" + Scenename);
+
+        //Level3 ma svojeho vlastneho playera z nejakeho dovodu
+        if (string.Equals(Scenename, "level3")) {
+            Destroy(GameObject.Find("Player"));
+        }
         SceneManager.LoadScene(Scenename, LoadSceneMode.Single);
     }
 
