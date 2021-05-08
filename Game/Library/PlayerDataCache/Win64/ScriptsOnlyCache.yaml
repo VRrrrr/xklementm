@@ -95,6 +95,8 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
+    Unity.XR.OpenVR.Editor.dll:
+    - Unity.XR.OpenVR.Editor.OpenVRSettingsEditor
     Unity.XR.OpenVR.dll:
     - Unity.XR.OpenVR.OpenVRLoader
     - Unity.XR.OpenVR.OpenVRSettings
@@ -418,6 +420,8 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
@@ -1191,7 +1195,7 @@ ScriptsOnlyBuild:
     className: JoeJeffController
   - hash:
       serializedVersion: 2
-      Hash: 2e7952aaecacd76c2491c64cafd20569
+      Hash: f5b1878de1911fc9418858a1133e9bca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Saber
@@ -2235,7 +2239,7 @@ ScriptsOnlyBuild:
     className: CollisionArea
   - hash:
       serializedVersion: 2
-      Hash: 565bdf0a2c567911219886528e158735
+      Hash: 9f6a936c003b4c707038b8538b2aa7f6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PowerButton
@@ -2869,4 +2873,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/vr/Documents/games/irrelevant/klement_new_build/Game.exe
+  playerPath: C:/Users/vr/Documents/games/irrelevant/final/Game.exe

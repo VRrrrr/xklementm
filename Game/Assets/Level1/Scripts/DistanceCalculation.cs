@@ -66,7 +66,7 @@ public class DistanceCalculation : MonoBehaviour
         retDistance = rnd.Next(1175, 1225) + retDistancePenalty;
         retDistance = Math.Round(retDistance, 2);
 
-        if (retDistance > 1300 && debugLog.text == "Gratulujem ti, podarilo sa ti naštartovať motor, pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie.." && accumObj.accumulatorsPassed)
+        if (retDistance > 1300 && debugLog.text == "Gratulujem ti, podarilo sa ti naštartovať motor. Pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie." && accumObj.accumulatorsPassed)
         {
             passLevel = true;
             levelPassButton.interactable = true;

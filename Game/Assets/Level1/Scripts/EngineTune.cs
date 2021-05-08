@@ -139,7 +139,7 @@ public class EngineTune : MonoBehaviour
         {           
             engineOn = true;
             powerButtonScript.switchPower(on);
-            debugText.text = "Gratulujem ti, podarilo sa ti naštartovať motor, pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie.";
+            debugText.text = "Gratulujem ti, podarilo sa ti naštartovať motor. Pre ďalšie inštrukcie sa vráť k obrazovke pre inštrukcie.";
             CalculationButton.interactable = true;
         }
 
